@@ -1,8 +1,7 @@
-
-
 import type { Metadata } from "next";
 import { Titan_One, Inter, Anton } from "next/font/google";
 import "./globals.css";
+import PullMenu from "@/components/PullMenu";
 
 const heading = Titan_One({ weight: "400", subsets: ["latin"], variable: "--font-heading" });
 const body = Inter({ subsets: ["latin"], variable: "--font-body" });
@@ -29,6 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         className={`${heading.variable} ${body.variable} ${condensed.variable}`}
         style={{ fontFamily: "var(--font-body)" }}
       >
+        <PullMenu />
         {children}
       </body>
     </html>

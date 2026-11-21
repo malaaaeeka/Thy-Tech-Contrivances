@@ -6,9 +6,15 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <>
-      <Hero />
-      <Services />
-      <Founders />
+      <div id="home">
+        <Hero />
+      </div>
+      <div id="services">
+        <Services />
+      </div>
+      <div id="founders">
+        <Founders />
+      </div>
       <Footer />
     </>
   );
