@@ -464,7 +464,8 @@ export default function Services() {
           overflow: "hidden",
           zIndex: 10,
           pointerEvents: "none",
-          background: "#023e8a",
+          background: "#caf0f8",
+         
         }}
       >
         <div
@@ -475,7 +476,7 @@ export default function Services() {
             top: "-20vh",
             height: "40vh",
             borderRadius: "50%",
-            background: "#0077B6",
+background: "#03045e",
           }}
         />
       </div>
@@ -485,7 +486,7 @@ export default function Services() {
 
 /* Palette: lighter blues from your Coolors set, none used by hero/founders/footer. */
 const css = `
-.svc{--bg:#0077B6;--blue:#48CAE4;--ink:#CAF0F8;--accent:#CAF0F8;--tape:#90E0EF;
+.svc{--bg:#03045e;--blue:#48CAE4;--ink:#CAF0F8;--accent:#CAF0F8;--tape:#90E0EF;
   --sw:100vw;--sh:100vh;position:relative;background:var(--bg);color:var(--ink)}
 .svc-stage{position:sticky;top:0;height:100vh;overflow:hidden;background:var(--bg)}
 .svc-world{position:absolute;left:0;top:0;will-change:transform}

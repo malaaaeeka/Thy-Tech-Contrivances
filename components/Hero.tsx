@@ -167,7 +167,7 @@ export default function Hero() {
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 bottom-0 z-[5] h-[20vh] overflow-hidden"
-        style={{ background: "#0077B6" }}
+        style={{ background: "#03045e" }}
       >
         <div
           className="absolute"

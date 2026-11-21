@@ -6,18 +6,12 @@ import PaperLayer from "./PaperLayer";
 
 
 const HEADING = { fontFamily: "var(--font-heading)" } as const;
-const BG = "#023e8a"; // same background for every founder
+const BG = "#03045e"; // same background for every founder
+// const BG = "#023e8a"; // same background for every founder
 
 //  Edit names, roles and the short bios here
 const FOUNDERS = [
-  {
-    name: "Nargis Niaz",
-    first: "NARGIS",
-    second: "NIAZ",
-    role: "Chair Person",
-    img: "/founders/Mother.png",
-    bio: "الدعوات وراء كل شيء",
-  },
+  
   {
     name: "Muhammad Khalid",
     first: "MUHAMMAD",
@@ -32,7 +26,7 @@ const FOUNDERS = [
     second: "ADAM",
     role: "Board Of Director",
     img: "/founders/Adam.png",
-    bio: "A firm hand on strategy, A steady mind on direction..",
+    bio: "A firm hand on strategy, A steady mind on direction.",
   },
   {
     name: "Malaika Khalid",
@@ -41,6 +35,14 @@ const FOUNDERS = [
     role: "Board Of Director",
     img: "/founders/Malaika.png",
     bio: "Forging Systems, Courting Reverie, Questioning Why.",
+  },
+  {
+    name: "Nargis Niaz",
+    first: "NARGIS",
+    second: "NIAZ",
+    role: "Chair Person",
+    img: "/founders/Mother.png",
+    bio: "الدعوات وراء كل شيء",
   },
 ];
 
@@ -122,7 +124,7 @@ const bottomPath = `M ${150 - HALF} ${bottomEdgeY} A ${R_BOTTOM} ${R_BOTTOM} 0 0
 
       {/* top tag */}
       <div
-  className="absolute left-1/2 top-[6vh] z-20 -translate-x-1/2 -rotate-2 whitespace-nowrap rounded-md bg-[#ade8f4] px-3 py-2 text-xs font-normal uppercase tracking-wide text-[#03045e] shadow-md md:px-4 md:text-sm"
+  className="absolute left-1/2 top-[6vh] z-20 -translate-x-1/2 -rotate-2 whitespace-nowrap rounded-md bg-[#caf0f8] px-3 py-2 text-xs font-normal uppercase tracking-wide text-[#03045e] shadow-md md:px-4 md:text-sm"
   style={HEADING}
 >
         <span className="mr-2 opacity-60">⋮</span>Meet the people behind it
@@ -131,7 +133,7 @@ const bottomPath = `M ${150 - HALF} ${bottomEdgeY} A ${R_BOTTOM} ${R_BOTTOM} 0 0
       {/* left: role chip + bio */}
       <div className="absolute left-4 top-[34%] z-20 hidden md:block">
         <div
-  className="rounded-md bg-[#ade8f4] px-3 py-2 text-sm font-normal uppercase tracking-wide text-[#03045e] shadow-md"
+  className="rounded-md bg-[#caf0f8] px-3 py-2 text-sm font-normal uppercase tracking-wide text-[#03045e] shadow-md"
   style={HEADING}
 >
   <span className="mr-2 opacity-60">⋮</span>
@@ -148,7 +150,7 @@ const bottomPath = `M ${150 - HALF} ${bottomEdgeY} A ${R_BOTTOM} ${R_BOTTOM} 0 0
       {/* phone: role + bio under the photo */}
       <div className="absolute inset-x-0 bottom-[22vh] z-20 flex flex-col items-center gap-2 px-8 text-center md:hidden">
         <div
-          className="rounded-md bg-[#ade8f4] px-3 py-2 text-xs font-normal uppercase tracking-wide text-[#03045e] shadow-md"
+          className="rounded-md bg-[#caf0f8] px-3 py-2 text-xs font-normal uppercase tracking-wide text-[#03045e] shadow-md"
           style={HEADING}
         >
           <span className="mr-2 opacity-60">⋮</span>
@@ -236,13 +238,15 @@ const bottomPath = `M ${150 - HALF} ${bottomEdgeY} A ${R_BOTTOM} ${R_BOTTOM} 0 0
             ))}
           </div>
 
+
+            
           {/* EXPLORE badge: the small arrow button changes the founder */}
           <div
             className="absolute -right-[26%] -top-[8%] z-20 aspect-square w-[46%]"
             style={{ containerType: "inline-size" }}
           >
             <div className="absolute inset-0 rounded-full bg-[#caf0f8] shadow-xl" />
-            <div className="ring-spin absolute inset-[7%] rounded-full border-2 border-dotted border-[#03045e]" />
+            <div className="absolute inset-[6%] rounded-full border-2 border-[#03045e]" />
             <span
               className="absolute inset-0 flex -rotate-[12deg] items-center justify-center pb-[14%] uppercase text-[#03045e]"
               style={{ ...HEADING, fontSize: "17cqw" }}
@@ -301,7 +305,7 @@ const bottomPath = `M ${150 - HALF} ${bottomEdgeY} A ${R_BOTTOM} ${R_BOTTOM} 0 0
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 bottom-0 z-[15] h-[20vh] overflow-hidden"
-        style={{ background: "#03045e" }}
+        style={{ background: "#caf0f8" }}
       >
         <div
           className="absolute"
